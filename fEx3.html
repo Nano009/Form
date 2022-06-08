@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Email Form</title>
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend><strong>Your Message to "Example" Cafe:</strong></legend>
+		<table>
+			<tr>
+				<td style="padding-right: 100px;"><label>To</label></td>
+				<td><input list="li">
+					<datalist id="li">
+						<option value="Owner">
+						<option value="Manager">
+						<option value="Receptionist">
+						<option value="Waiter">
+						<option value="Deliver">
+					</datalist></td>
+			</tr>
+			<tr>
+				<td><label for="mail">Your email</label></td>
+				<td><input type="email" name="mail" id="mail"></td>
+			</tr>
+			<tr>
+				<td><label for="ta">Message</label></td>
+				<td><textarea id="ta" name="ta" rows="10" cols="50"></textarea><br>
+					<label for="af">Attach File:</label><br/>
+					<input type="file" name="af" id="af">
+					<input type="submit" name="send" value="Send"></td>
+			</tr>
+			<tr>
+				<td style="padding-bottom: 40px;"><label>Payment Method:</label></td>
+				<td><input type="checkbox" name="cash" id="cash" checked>
+					<label for="cash">Cash</label><br>
+					<input type="checkbox" name="cheque" id="cheque">
+					<label for="cheque">Cheque</label><br>
+					<input type="checkbox" name="pay" id="pay">
+					<label for="pay">KPay/WavePay</label></td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend><strong>How you found us:</strong></legend>
+		<table>
+			<tr>
+				<td style="padding-right: 75px;"><label for="gg">How did you hear of us</label></td>
+				<td><select id="gg" name="gg">
+					<option value="Google">Google</option>
+					<option value="Local newspaper ad">Local newspaper ad</option>
+					<option value="Friend">Friend</option>
+					<option value="Others">Others</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="checkbox" name="ch" id="ch" checked>
+					<label for="ch">Ensure this box is checked if you would like to receive email updates</label></td>
+			</tr>
+		</table>
+	</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Entry</title>
+</head>
+<body>
+<form>
+	<<fieldset style="width: 35%; background-color: darkcyan;">
+		<legend><i>Contract Information</i></legend>
+		<label for="fn">First name:</label><br>
+		<input type="text" name="fn" id="fn"><br><br>
+		<label for="ln">Last name:</label><br>
+		<input type="text" name="ln" id="ln"><br><br>
+		<label for="mail">E-mail:</label><br>
+		<input type="email" id="mail" name="mail"><br><br>
+		<label for="tel">Telphone: (Format: 09-123456789)</label><br>
+		<input type="tell" name="tel" id="tel" pattern="[09]{2}-[0-9]{9}"><br><br>
+		<label for="ad">Address</label><br>
+		<textarea id="ad" name="ad" rows="5" cols="50"></textarea><br><br>
+	</fieldset><br><br>
+
+	<fieldset style="width: 35%; background-color: peachpuff;">
+		<legend><i>Competition Question</i></legend>
+		<label for="et">How tall is the Eiffel Tower in Paris, France?</label><br>
+		<input type="radio" name="ht" id="584">
+		<label for="584">584ft</label><br>
+		<input type="radio" name="ht" id="784">
+		<label for="784">784ft</label><br>
+		<input type="radio" name="ht" id="984">
+		<label for="984">984ft</label><br>
+		<input type="radio" name="ht" id="1184">
+		<label for="1184">1184ft</label><br><br>
+	</fieldset><br><br>
+
+	<fieldset style="width: 35%; background-color: goldenrod;">
+		<legend><i>Timebreaker Question</i></legend>
+		<label for="ct">In 25 words or less, say why you would like to win $10,000:</label>
+		<textarea id="ct" name="ct" rows="10" cols="50"></textarea><br><br>
+	</fieldset><br><br>
+
+	<fieldset style="width: 35%;">
+		<legend><i>Enter Competition</i></legend>
+		<input type="submit" value="Enter Competition" style="background-color: red;">
+	</fieldset>
+</form>
+</body>
+</html>
